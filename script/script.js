@@ -1,6 +1,6 @@
 function getSeatNo() {
     var seatNo = parseInt((document.getElementById("sn") || {}).value || "0");
-    console.log(berthType(seatNo));
+    document.getElementById("status").textContent=`${berthType(seatNo)}`
 }
 
 function berthType(sn) {
